@@ -1,0 +1,24 @@
+# =============================================================================
+# Production Runtime Requirements
+# =============================================================================
+# Lean dependency set for Docker containers and production server deployments.
+# Does not include test runners or local development tooling.
+# =============================================================================
+
+# Core Application & Data Handling
+pandas>=2.0.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+streamlit>=1.30.0
+
+# Speech Transcription with Timestamps (Module 3)
+openai-whisper>=20231117
+
+# Local Dense Vector Embeddings (Module 6)
+sentence-transformers>=3.0.0
+
+# Embedding Dataset Serialization (Module 8)
+joblib>=1.3.0
+
+# Grounded Educational LLM Synthesis (Module 9, Optional)
+openai>=1.0.0

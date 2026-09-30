@@ -1,0 +1,44 @@
+# =============================================================================
+# Dockerignore — Exclude host-specific, cache, and secret files from image build
+# =============================================================================
+
+# Version control
+.git/
+.gitignore
+
+# Environment files & Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Test suites & artifacts
+tests/
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,65 @@
+# =============================================================================
+# Git Ignore Configuration for RAG AI Teacher Assistant
+# =============================================================================
+
+# Python Bytecode and Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit Configuration & Secrets
+.streamlit/secrets.toml
+!.streamlit/config.toml
+
+# Logs & Debug Outputs
+*.log
+logs/
+
+# IDE & Editor Directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project Data Directories (keep directory scaffolding via .gitkeep)
+data/videos/*
+!data/videos/.gitkeep
+data/audio/*
+!data/audio/.gitkeep
+data/transcripts/*
+!data/transcripts/.gitkeep
+data/chunks/*
+!data/chunks/.gitkeep
+data/embeddings/*
+!data/embeddings/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Evaluation Benchmark Dataset — ALWAYS TRACK
+!data/evaluation/rag_benchmark.json
+!data/evaluation/.gitkeep
+data/evaluation/results/*
+!data/evaluation/results/.gitkeep
+!data/evaluation/results/latest_evaluation.json
+!data/evaluation/results/latest_evaluation_report.md

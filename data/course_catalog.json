@@ -1,0 +1,34 @@
+{
+  "course_id": "python_course",
+  "course_name": "Introduction to Python",
+  "updated_at": "2026-09-30T08:43:32.028129+00:00",
+  "lecture_count": 2,
+  "lectures": {
+    "python_lecture": {
+      "lecture_id": "python_lecture",
+      "lecture_title": "Python Lecture",
+      "course_id": "python_course",
+      "source_filename": "python_lecture.mp3",
+      "file_hash": "3e4d43beffbd3678837b435e0868e0abba1faaa403056a9347db8cbdce1597a7",
+      "chunk_count": 1,
+      "status": "Indexed",
+      "indexed_at": "2026-09-29T15:10:48.866898+00:00",
+      "chunk_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\chunks\\python_lecture_chunks.json",
+      "embedding_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\embeddings\\python_lecture_embeddings.npz",
+      "metadata_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\embeddings\\python_lecture_metadata.json"
+    },
+    "tmpfy6rr9mw": {
+      "lecture_id": "tmpfy6rr9mw",
+      "lecture_title": "Tmpfy6Rr9Mw",
+      "course_id": "python_course",
+      "source_filename": "tmpfy6rr9mw.mp3",
+      "file_hash": "3970cd53a976ba3cf8c105667c22426befcf6a377221fc2b2863efa8018758f3",
+      "chunk_count": 16,
+      "status": "Indexed",
+      "indexed_at": "2026-09-29T15:10:48.868313+00:00",
+      "chunk_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\chunks\\tmpfy6rr9mw_chunks.json",
+      "embedding_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\embeddings\\tmpfy6rr9mw_embeddings.npz",
+      "metadata_file": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\embeddings\\tmpfy6rr9mw_metadata.json"
+    }
+  }
+}

@@ -1,0 +1,1130 @@
+{
+  "timestamp": "2026-09-30T08:41:52.642918+00:00",
+  "dataset_path": "C:\\Users\\risha\\.gemini\\antigravity-ide\\scratch\\rag-ai-teacher\\data\\evaluation\\rag_benchmark.json",
+  "relevance_threshold": 0.32,
+  "total_questions": 20,
+  "questions_by_type": {
+    "direct_lecture": 5,
+    "concept": 4,
+    "cross_lecture": 1,
+    "follow_up": 2,
+    "lecture_specific": 2,
+    "out_of_scope": 5,
+    "ambiguous": 1
+  },
+  "retrieval_metrics": {
+    "recall_at_1": 0.5357142857142857,
+    "recall_at_3": 0.8214285714285714,
+    "recall_at_5": 0.8928571428571429,
+    "hit_at_1": 0.6428571428571429,
+    "hit_at_3": 0.9285714285714286,
+    "hit_at_5": 1.0,
+    "mrr": 0.7678571428571429,
+    "lecture_retrieval_accuracy": 1.0
+  },
+  "relevance_metrics": {
+    "total_questions": 20,
+    "total_relevant": 14,
+    "total_irrelevant": 6,
+    "true_positives": 13,
+    "true_negatives": 6,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "decision_accuracy": 0.95,
+    "false_acceptance_rate": 0.0,
+    "false_rejection_rate": 0.07142857142857142,
+    "acceptance_rate": 0.65
+  },
+  "score_analysis": {
+    "avg_top_score_relevant": 0.5370241808039802,
+    "avg_top_score_rejected": 0.17590550945273467,
+    "min_relevant_top_score": 0.296994149684906,
+    "max_irrelevant_top_score": 0.24429167807102203
+  },
+  "citation_metrics": {
+    "total_citations_evaluated": 49,
+    "valid_citations": 49,
+    "citation_validity_rate": 1.0
+  },
+  "answer_metrics": {
+    "deterministic_pass_rate": 0.95,
+    "deterministic_passed_count": 19,
+    "total_questions": 20,
+    "llm_judge_status": "unavailable"
+  },
+  "failures": [
+    {
+      "question_id": "eval_012",
+      "question": "What department has she been lecturing in?",
+      "question_type": "follow_up",
+      "top_score": 0.296994149684906,
+      "reasons": [
+        "False Rejection: question is relevant, but top score 0.2970 < 0.3200 threshold."
+      ]
+    }
+  ],
+  "question_results": [
+    {
+      "question_id": "eval_001",
+      "question": "What is declarative knowledge compared to imperative knowledge in computer science?",
+      "question_type": "direct_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.6087369918823242,
+      "top_k_scores": [
+        0.6087369918823242,
+        0.40180492401123047,
+        0.3800804316997528,
+        0.2808153033256531,
+        0.2741592526435852
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0002",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0005",
+        "tmpfy6rr9mw_0001"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0002"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 3,
+      "valid_citations": 3,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What is declarative knowledge compared to imperative knowledge in computer science?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_002",
+      "question": "What are the scalar primitive types available in Python?",
+      "question_type": "direct_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.4578254520893097,
+      "top_k_scores": [
+        0.4578254520893097,
+        0.4246906638145447,
+        0.42257463932037354,
+        0.35219815373420715,
+        0.30525103211402893
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0008",
+        "tmpfy6rr9mw_0007",
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0010"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0007"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "lecture_match": true,
+      "citations_evaluated": 4,
+      "valid_citations": 4,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What are the scalar primitive types available in Python?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_003",
+      "question": "What does the assignment operator equal sign do in Python?",
+      "question_type": "direct_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.6414132714271545,
+      "top_k_scores": [
+        0.6414132714271545,
+        0.530967652797699,
+        0.47133669257164,
+        0.41971710324287415,
+        0.39989128708839417
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0015",
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0013"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0011",
+        "tmpfy6rr9mw_0012"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.5,
+      "recall_at_3": 0.5,
+      "recall_at_5": 0.5,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What does the assignment operator equal sign do in Python?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_004",
+      "question": "What is machine learning a subset of?",
+      "question_type": "direct_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.7651723623275757,
+      "top_k_scores": [
+        0.7651723623275757,
+        0.3203667402267456,
+        0.1971314251422882,
+        0.12849679589271545,
+        0.11848212778568268
+      ],
+      "retrieved_chunk_ids": [
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0002",
+        "tmpfy6rr9mw_0003",
+        "tmpfy6rr9mw_0005",
+        "tmpfy6rr9mw_0004"
+      ],
+      "retrieved_lecture_ids": [
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "python_lecture_0001"
+      ],
+      "expected_lecture_id": "python_lecture",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 2,
+      "valid_citations": 2,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What is machine learning a subset of?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_005",
+      "question": "What are the six Turing primitives mentioned in the computer history overview?",
+      "question_type": "direct_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.36681419610977173,
+      "top_k_scores": [
+        0.36681419610977173,
+        0.36109766364097595,
+        0.30778583884239197,
+        0.2882220149040222,
+        0.28557223081588745
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0004",
+        "tmpfy6rr9mw_0005",
+        "tmpfy6rr9mw_0002",
+        "tmpfy6rr9mw_0001",
+        "tmpfy6rr9mw_0016"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0004"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 2,
+      "valid_citations": 2,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What are the six Turing primitives mentioned in the computer history overview?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_006",
+      "question": "Why does the equal sign in computer science differ from mathematical equality?",
+      "question_type": "concept",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.47854653000831604,
+      "top_k_scores": [
+        0.47854653000831604,
+        0.45911625027656555,
+        0.3771044611930847,
+        0.297096848487854,
+        0.28717905282974243
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0014",
+        "tmpfy6rr9mw_0010",
+        "tmpfy6rr9mw_0009"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0011",
+        "tmpfy6rr9mw_0012"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.5,
+      "recall_at_5": 0.5,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.5,
+      "lecture_match": true,
+      "citations_evaluated": 3,
+      "valid_citations": 3,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "Why does the equal sign in computer science differ from mathematical equality?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_007",
+      "question": "Does Python store the expression itself or the evaluated value in memory?",
+      "question_type": "concept",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.608534574508667,
+      "top_k_scores": [
+        0.608534574508667,
+        0.5275172591209412,
+        0.4956713318824768,
+        0.42777401208877563,
+        0.37250256538391113
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0004",
+        "tmpfy6rr9mw_0013",
+        "tmpfy6rr9mw_0015"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0009"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "Does Python store the expression itself or the evaluated value in memory?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_008",
+      "question": "How do you swap two variables in Python using a temporary variable?",
+      "question_type": "concept",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.609281063079834,
+      "top_k_scores": [
+        0.609281063079834,
+        0.4244588017463684,
+        0.376138299703598,
+        0.34403151273727417,
+        0.34193843603134155
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0015",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0013"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0014",
+        "tmpfy6rr9mw_0015"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.5,
+      "recall_at_3": 0.5,
+      "recall_at_5": 0.5,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "How do you swap two variables in Python using a temporary variable?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_009",
+      "question": "How do division, integer division, and the remainder operator work in Python?",
+      "question_type": "concept",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.6027981638908386,
+      "top_k_scores": [
+        0.6027981638908386,
+        0.4661988914012909,
+        0.3994947373867035,
+        0.39686763286590576,
+        0.3956722319126129
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0010",
+        "tmpfy6rr9mw_0004",
+        "tmpfy6rr9mw_0013"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0010"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "How do division, integer division, and the remainder operator work in Python?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_010",
+      "question": "Does the course material cover both Python programming basics and artificial intelligence or machine learning?",
+      "question_type": "cross_lecture",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.5102185010910034,
+      "top_k_scores": [
+        0.5102185010910034,
+        0.417971670627594,
+        0.3677161633968353,
+        0.3306897282600403,
+        0.27757859230041504
+      ],
+      "retrieved_chunk_ids": [
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0001",
+        "tmpfy6rr9mw_0016",
+        "tmpfy6rr9mw_0002",
+        "tmpfy6rr9mw_0012"
+      ],
+      "retrieved_lecture_ids": [
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0001",
+        "python_lecture_0001"
+      ],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.5,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": null,
+      "citations_evaluated": 4,
+      "valid_citations": 4,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "Does the course material cover both Python programming basics and artificial intelligence or machine learning?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_011",
+      "question": "What about integer division and the remainder operator?",
+      "question_type": "follow_up",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.6059303283691406,
+      "top_k_scores": [
+        0.6059303283691406,
+        0.4562665820121765,
+        0.39961743354797363,
+        0.3910609483718872,
+        0.38922786712646484
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0010",
+        "tmpfy6rr9mw_0013",
+        "tmpfy6rr9mw_0004"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0010"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "Can you explain how division operations work in Python. What about integer division and the remainder operator?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_012",
+      "question": "What department has she been lecturing in?",
+      "question_type": "follow_up",
+      "expected_decision": true,
+      "actual_decision": false,
+      "decision_match": false,
+      "top_score": 0.296994149684906,
+      "top_k_scores": [
+        0.296994149684906,
+        0.1504603624343872,
+        0.130311518907547,
+        0.09630413353443146,
+        0.0776585191488266
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0001",
+        "tmpfy6rr9mw_0004",
+        "tmpfy6rr9mw_0002",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0010"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0001"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": false,
+      "failure_reasons": [
+        "False Rejection: question is relevant, but top score 0.2970 < 0.3200 threshold."
+      ],
+      "debug_info": {
+        "effective_query": "Who is the lecturer for course 600L. What department has she been lecturing in?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_013",
+      "question": "What topics are covered in the machine learning lecture?",
+      "question_type": "lecture_specific",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.5696097612380981,
+      "top_k_scores": [
+        0.5696097612380981
+      ],
+      "retrieved_chunk_ids": [
+        "python_lecture_0001"
+      ],
+      "retrieved_lecture_ids": [
+        "python_lecture"
+      ],
+      "expected_chunk_ids": [
+        "python_lecture_0001"
+      ],
+      "expected_lecture_id": "python_lecture",
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "lecture_match": true,
+      "citations_evaluated": 1,
+      "valid_citations": 1,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What topics are covered in the machine learning lecture?",
+        "scope_filter": "python_lecture",
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_014",
+      "question": "What does the instructor explain about scalar objects and truth values?",
+      "question_type": "lecture_specific",
+      "expected_decision": true,
+      "actual_decision": true,
+      "decision_match": true,
+      "top_score": 0.39646318554878235,
+      "top_k_scores": [
+        0.39646318554878235,
+        0.38680052757263184,
+        0.3388221859931946,
+        0.33684059977531433,
+        0.335469514131546
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0008",
+        "tmpfy6rr9mw_0009",
+        "tmpfy6rr9mw_0014",
+        "tmpfy6rr9mw_0007",
+        "tmpfy6rr9mw_0016"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [
+        "tmpfy6rr9mw_0007"
+      ],
+      "expected_lecture_id": "tmpfy6rr9mw",
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 1.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.25,
+      "lecture_match": true,
+      "citations_evaluated": 5,
+      "valid_citations": 5,
+      "citation_valid": true,
+      "answer_available": true,
+      "is_abstention": false,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What does the instructor explain about scalar objects and truth values?",
+        "scope_filter": "tmpfy6rr9mw",
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_015",
+      "question": "What is the capital city of France?",
+      "question_type": "out_of_scope",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.11312682926654816,
+      "top_k_scores": [
+        0.11312682926654816,
+        0.08157685399055481,
+        0.06899149715900421,
+        0.05797403305768967,
+        0.052768636494874954
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0008",
+        "tmpfy6rr9mw_0011",
+        "tmpfy6rr9mw_0002",
+        "tmpfy6rr9mw_0013"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What is the capital city of France?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_016",
+      "question": "How do you bake a triple chocolate fudge cake with strawberries in an oven?",
+      "question_type": "out_of_scope",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.17589345574378967,
+      "top_k_scores": [
+        0.17589345574378967,
+        0.0754421055316925,
+        0.07470192015171051,
+        0.03150022029876709,
+        0.014855418354272842
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0003",
+        "tmpfy6rr9mw_0008",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0010",
+        "tmpfy6rr9mw_0012"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "How do you bake a triple chocolate fudge cake with strawberries in an oven?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_017",
+      "question": "Explain backpropagation in deep convolutional neural networks with batch normalization.",
+      "question_type": "out_of_scope",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.2392619252204895,
+      "top_k_scores": [
+        0.2392619252204895,
+        0.2355150282382965,
+        0.22276932001113892,
+        0.18837672472000122,
+        0.1692819893360138
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0004",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0003",
+        "tmpfy6rr9mw_0002",
+        "tmpfy6rr9mw_0005"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "Explain backpropagation in deep convolutional neural networks with batch normalization.",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_018",
+      "question": "How do you install PostgreSQL database server on Ubuntu Linux using apt-get?",
+      "question_type": "out_of_scope",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.023183142766356468,
+      "top_k_scores": [
+        0.023183142766356468,
+        0.010886791162192822,
+        -0.0120449960231781,
+        -0.020911958068609238,
+        -0.04294430837035179
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0003",
+        "tmpfy6rr9mw_0002",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0007",
+        "tmpfy6rr9mw_0004"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "How do you install PostgreSQL database server on Ubuntu Linux using apt-get?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_019",
+      "question": "What is quantum entanglement and the Einstein-Podolsky-Rosen paradox in physics?",
+      "question_type": "out_of_scope",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.13858738541603088,
+      "top_k_scores": [
+        0.13858738541603088,
+        0.12625451385974884,
+        0.12054961174726486,
+        0.10802607238292694,
+        0.08801382780075073
+      ],
+      "retrieved_chunk_ids": [
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0007",
+        "tmpfy6rr9mw_0003",
+        "tmpfy6rr9mw_0004",
+        "tmpfy6rr9mw_0009"
+      ],
+      "retrieved_lecture_ids": [
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What is quantum entanglement and the Einstein-Podolsky-Rosen paradox in physics?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    },
+    {
+      "question_id": "eval_020",
+      "question": "What is the exact registration deadline and tuition fee for taking course 600L for academic credit?",
+      "question_type": "ambiguous",
+      "expected_decision": false,
+      "actual_decision": false,
+      "decision_match": true,
+      "top_score": 0.24429167807102203,
+      "top_k_scores": [
+        0.24429167807102203,
+        0.06454819440841675,
+        0.056584425270557404,
+        0.04864328354597092,
+        0.020231254398822784
+      ],
+      "retrieved_chunk_ids": [
+        "tmpfy6rr9mw_0001",
+        "tmpfy6rr9mw_0002",
+        "python_lecture_0001",
+        "tmpfy6rr9mw_0012",
+        "tmpfy6rr9mw_0013"
+      ],
+      "retrieved_lecture_ids": [
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw",
+        "python_lecture",
+        "tmpfy6rr9mw",
+        "tmpfy6rr9mw"
+      ],
+      "expected_chunk_ids": [],
+      "expected_lecture_id": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "reciprocal_rank": 0.0,
+      "lecture_match": null,
+      "citations_evaluated": 0,
+      "valid_citations": 0,
+      "citation_valid": null,
+      "answer_available": true,
+      "is_abstention": true,
+      "deterministic_checks_passed": true,
+      "failure_reasons": [],
+      "debug_info": {
+        "effective_query": "What is the exact registration deadline and tuition fee for taking course 600L for academic credit?",
+        "scope_filter": null,
+        "threshold": 0.32
+      }
+    }
+  ]
+}

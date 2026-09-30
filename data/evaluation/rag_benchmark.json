@@ -1,0 +1,222 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What is declarative knowledge compared to imperative knowledge in computer science?",
+    "question_type": "direct_lecture",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Declarative vs Imperative Knowledge",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0002"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_002",
+    "question": "What are the scalar primitive types available in Python?",
+    "question_type": "direct_lecture",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Scalar Primitive Types",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0007"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_003",
+    "question": "What does the assignment operator equal sign do in Python?",
+    "question_type": "direct_lecture",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Variable Assignment Operator",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0011", "tmpfy6rr9mw_0012"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_004",
+    "question": "What is machine learning a subset of?",
+    "question_type": "direct_lecture",
+    "expected_lecture_id": "python_lecture",
+    "expected_topic": "Machine Learning Definition",
+    "expected_relevant_chunk_ids": ["python_lecture_0001"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_005",
+    "question": "What are the six Turing primitives mentioned in the computer history overview?",
+    "question_type": "direct_lecture",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Turing Primitives",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0004"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_006",
+    "question": "Why does the equal sign in computer science differ from mathematical equality?",
+    "question_type": "concept",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Assignment vs Equality",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0011", "tmpfy6rr9mw_0012"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_007",
+    "question": "Does Python store the expression itself or the evaluated value in memory?",
+    "question_type": "concept",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Expression Evaluation and Storage",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0009"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_008",
+    "question": "How do you swap two variables in Python using a temporary variable?",
+    "question_type": "concept",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Variable Swapping with Temporary Variable",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0014", "tmpfy6rr9mw_0015"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_009",
+    "question": "How do division, integer division, and the remainder operator work in Python?",
+    "question_type": "concept",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Division and Modulo Operators",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0010"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_010",
+    "question": "Does the course material cover both Python programming basics and artificial intelligence or machine learning?",
+    "question_type": "cross_lecture",
+    "expected_lecture_id": null,
+    "expected_topic": "Cross Course Content Overview",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0001", "python_lecture_0001"],
+    "should_answer": true,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_011",
+    "question": "What about integer division and the remainder operator?",
+    "question_type": "follow_up",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Follow-up on Python Division Operators",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0010"],
+    "should_answer": true,
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "Can you explain how division operations work in Python?"
+      },
+      {
+        "role": "assistant",
+        "content": "In Python, regular division with a slash always returns a float regardless of whether the operands are integers or floats."
+      }
+    ],
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_012",
+    "question": "What department has she been lecturing in?",
+    "question_type": "follow_up",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Follow-up on Instructor Background",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0001"],
+    "should_answer": true,
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "Who is the lecturer for course 600L?"
+      },
+      {
+        "role": "assistant",
+        "content": "The lecturer is Anna Bell who introduces the first lecture of 600L."
+      }
+    ],
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_013",
+    "question": "What topics are covered in the machine learning lecture?",
+    "question_type": "lecture_specific",
+    "expected_lecture_id": "python_lecture",
+    "expected_topic": "Machine Learning Lecture Scope",
+    "expected_relevant_chunk_ids": ["python_lecture_0001"],
+    "should_answer": true,
+    "lecture_scope": "python_lecture"
+  },
+  {
+    "id": "eval_014",
+    "question": "What does the instructor explain about scalar objects and truth values?",
+    "question_type": "lecture_specific",
+    "expected_lecture_id": "tmpfy6rr9mw",
+    "expected_topic": "Scalar Objects and Booleans",
+    "expected_relevant_chunk_ids": ["tmpfy6rr9mw_0007"],
+    "should_answer": true,
+    "lecture_scope": "tmpfy6rr9mw"
+  },
+  {
+    "id": "eval_015",
+    "question": "What is the capital city of France?",
+    "question_type": "out_of_scope",
+    "expected_lecture_id": null,
+    "expected_topic": "Geography Out of Scope",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_016",
+    "question": "How do you bake a triple chocolate fudge cake with strawberries in an oven?",
+    "question_type": "out_of_scope",
+    "expected_lecture_id": null,
+    "expected_topic": "Culinary Recipe Out of Scope",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_017",
+    "question": "Explain backpropagation in deep convolutional neural networks with batch normalization.",
+    "question_type": "out_of_scope",
+    "expected_lecture_id": null,
+    "expected_topic": "Advanced Deep Learning Out of Scope",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_018",
+    "question": "How do you install PostgreSQL database server on Ubuntu Linux using apt-get?",
+    "question_type": "out_of_scope",
+    "expected_lecture_id": null,
+    "expected_topic": "System Administration Out of Scope",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_019",
+    "question": "What is quantum entanglement and the Einstein-Podolsky-Rosen paradox in physics?",
+    "question_type": "out_of_scope",
+    "expected_lecture_id": null,
+    "expected_topic": "Quantum Physics Out of Scope",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  },
+  {
+    "id": "eval_020",
+    "question": "What is the exact registration deadline and tuition fee for taking course 600L for academic credit?",
+    "question_type": "ambiguous",
+    "expected_lecture_id": null,
+    "expected_topic": "Administrative Deadlines and Fees (Absent)",
+    "expected_relevant_chunk_ids": [],
+    "should_answer": false,
+    "lecture_scope": "All Lectures"
+  }
+]
